@@ -13,16 +13,17 @@ export default class Timeline extends Component {
         newTweet: '',
     };
 
-    async componentDidMount() {
-        this.subscribeToEvents();
-
-        try {
-            const response = await api.get('/tweets');
-            this.setState({ tweets: response.data });
-        } catch (err) {
-            console.log("Erro ao buscar tweets:", err);
-        }
+    async componentDidMount(){
+    this.subscribeToEvents();
+    
+    try {
+        const response = await api.get('tweets');
+        console.log(response.data); // 👈 adiciona isso
+        this.setState({ tweets: response.data });
+    } catch (err) {
+        console.error(err); // 👈 e isso
     }
+}
 
     subscribeToEvents = () => {
         const io = socketIOClient('https://tweetify-production.up.railway.app');
