@@ -105,4 +105,4 @@ Este projeto é apenas para fins educacionais.
 
 👨‍💻 Autor
 
-Desenvolvido por você 🚀
+Desenvolvido por Paulo Henrique Pfitzner 🚀
