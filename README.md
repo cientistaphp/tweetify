@@ -105,4 +105,8 @@ Este projeto é apenas para fins educacionais.
 
 👨‍💻 Autor
 
+<<<<<<< HEAD
 Desenvolvido por Paulo Henrique Pfitzner 🚀
+=======
+Desenvolvido por Paulo Henrique Pfitzner 🚀
+>>>>>>> 0a77e78 (fix: update API URL to production (Railway))
