@@ -1,6 +1,6 @@
 import  React, { Component } from 'react';
 import api from '../services/api';
-import socket from 'socket.io-client';
+import socketIOClient from "socket.io-client";
 
 import twitterLogo from '../twitter.svg';
 import './Timeline.css'
@@ -21,19 +21,23 @@ export default class Timeline extends Component {
 
     }
 
-    subscribeToEvents = () => {
-        const io = socket('https://tweetify-production.up.railway.app');
+    
 
-        io.on('tweet', data => {
-            this.setState({tweets: [data, ...this.state.tweets]});
-        });
+subscribeToEvents = () => {
+    const io = socketIOClient('https://tweetify-production.up.railway.app');
 
-        io.on('like', data => {
-            this.setState({tweets: this.state.tweets.map(tweet =>
-                tweet._id === data._id ? data : tweet)
-            })
+    io.on('tweet', data => {
+        this.setState({ tweets: [data, ...this.state.tweets] });
+    });
+
+    io.on('like', data => {
+        this.setState({
+            tweets: this.state.tweets.map(tweet =>
+                tweet._id === data._id ? data : tweet
+            )
         });
-    };
+    });
+};
 
     handleNewTweet = async e => {
         if (e.keyCode !== 13) return;
