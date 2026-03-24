@@ -56,19 +56,19 @@ A aplicação permite que usuários publiquem tweets, visualizem uma timeline e 
 ---
 
 🔹 Backend
--cd backend
--npm install
--npm run dev
+- cd backend
+- npm install
+- npm run dev
 
 🔹 Frontend
--cd frontend
--npm install
--npm start
+- cd frontend
+- npm install
+- npm start
 
 🔹 Mobile
--cd mobile
--npm install
--npx react-native run-android
+- cd mobile
+- npm install
+- npx react-native run-android
 
 🔐 Variáveis de ambiente
 
