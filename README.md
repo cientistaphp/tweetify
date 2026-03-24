@@ -42,9 +42,7 @@ A aplicação permite que usuários publiquem tweets, visualizem uma timeline e 
 ---
 
 ## 📁 Estrutura do projeto
-
-```bash
-tweetify/
+  tweetify/
   backend/
   frontend/
   mobile/
@@ -58,7 +56,6 @@ tweetify/
 ---
 
 🔹 Backend
-```bash
 -cd backend
 -npm install
 -npm run dev
