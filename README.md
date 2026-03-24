@@ -21,7 +21,6 @@ A aplicação permite que usuários publiquem tweets, visualizem uma timeline e 
 - 🔄 Upload de imagens *(em desenvolvimento)*  
 - 🔄 Autenticação com JWT *(em desenvolvimento)*  
 
-
 ---
 
 ## 🛠 Tecnologias utilizadas
@@ -43,36 +42,36 @@ A aplicação permite que usuários publiquem tweets, visualizem uma timeline e 
 ---
 
 ## 📁 Estrutura do projeto
+
+```bash
 tweetify/
   backend/
   frontend/
   mobile/
 
-## ⚙️ Como rodar o projeto
-
-### 🔹 Pré-requisitos
+⚙️ Como rodar o projeto
+🔹 Pré-requisitos
 - Node.js instalado  
 - MongoDB (local ou Atlas)  
-- Yarn ou npm  
+- Yarn ou npm
 
 ---
 
-### 🔹 Backend
-
+🔹 Backend
 ```bash
-cd backend
-npm install
-npm run dev
+-cd backend
+-npm install
+-npm run dev
 
 🔹 Frontend
-cd frontend
-npm install
-npm start
+-cd frontend
+-npm install
+-npm start
 
 🔹 Mobile
-cd mobile
-npm install
-npx react-native run-android
+-cd mobile
+-npm install
+-npx react-native run-android
 
 🔐 Variáveis de ambiente
 
@@ -80,24 +79,24 @@ Crie um arquivo .env na pasta backend:
 
 MONGO_URL=sua_string_do_mongo
 PORT=3000
-🌍 Deploy (em breve)
+🌍 Deploy
 
 Backend: Railway
 
-Frontend: Vercel 
+Frontend: Vercel
 
 📸 Preview
 
-Em breve screenshots da aplicação
+🚧 Em breve screenshots da aplicação
 
 📚 Aprendizados
 
 Este projeto foi fundamental para consolidar conhecimentos em:
 
 Arquitetura fullstack
-Integração entre frontend, backend e mobile
-Comunicação em tempo real com WebSockets
-Organização de código
+-Integração entre frontend, backend e mobile
+-Comunicação em tempo real com WebSockets
+-Organização de código
 
 📄 Licença
 
@@ -105,6 +104,4 @@ Este projeto é apenas para fins educacionais.
 
 👨‍💻 Autor
 
-Desenvolvido por Paulo Henrique Pfitzner 🚀
-
-
+Paulo Henrique Pfitzner 🚀
